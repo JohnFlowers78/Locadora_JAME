@@ -1,0 +1,22 @@
+### Listar Locacoes em Aberto:                                     //Listar TODAS as locações já Devolvidas e em Aberto por último nos testes!
+GET https://localhost:7197/api/locacao/listar/em_aberto
+
+### Buscar uma Locação por ID (Read)
+GET https://localhost:7197/api/locacao/buscar/2
+
+### Cadastrar uma Locação (Create) /  #IdFilme  /  #IdCliente
+POST https://localhost:7197/api/locacao/emprestar/2/2
+
+### Aterar uma Locação por ID (Update)
+PUT https://localhost:7197/api/locacao/alterar/1
+Content-Type: application/json
+
+{
+    "Valor": 33.0         
+}
+
+### Deletar uma Locação por ID (Delete)
+DELETE https://localhost:7197/api/locacao/deletar/1
+
+### Listar todas as Locações (Read)
+GET https://localhost:7197/api/locacao/listar
